@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Savory Slims — Fast Food</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Savory Slims Fast Food: high-protein, lower-calorie picks from major chains with exact orders and macros." />
+  <meta name="author" content="Khoi Tran" />
+  <link rel="stylesheet" href="savory.css" />
+  <style>
+    /* ===== Scope to this page only ===== */
+    body.page-fast .wrap { max-width: 1200px; }
+    body.page-fast { font-size: 18px; line-height: 1.6; }
+
+    body.page-fast h1.site-title { font-size: 2.15rem; line-height: 1.2; }
+    body.page-fast .tagline { font-size: 1.05rem; opacity: .95; }
+    body.page-fast h2 { font-size: 1.7rem; margin: .25rem 0 .75rem; }
+    body.page-fast .kicker { text-transform: uppercase; letter-spacing: .06em; font-size: .95rem; opacity: .85; margin-bottom: .35rem; }
+
+    /* Summary table */
+    body.page-fast table.compact { width: 100%; border-collapse: collapse; margin: 1.25rem 0 2rem; background: #fff; border-radius: 14px; overflow: hidden; }
+    body.page-fast table.compact th, 
+    body.page-fast table.compact td { padding: .9rem .8rem; border-bottom: 1px solid #e6e6e6; text-align: left; color:#111; font-size: 1.05rem; }
+    body.page-fast table.compact thead th { font-weight: 800; background: #f5f7fa; }
+
+    /* Card layout */
+    body.page-fast .pick-card{
+      display: grid; grid-template-columns: 1fr; gap: 1.25rem;
+      padding: 1.25rem; border: 1px solid #e6e6e6; border-radius: 18px;
+      background: #fff; color: #111;
+    }
+
+    /* Image box */
+    body.page-fast .img-box{
+      width: 100%;
+      height: 320px;
+      background: #f7f7f7;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    body.page-fast .img-box img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* show entire image */
+      display: block;
+    }
+
+    /* Text inside cards */
+    body.page-fast .macro{ font-weight: 800; font-size: 1.1rem; margin-bottom: .25rem; }
+    body.page-fast .pick-card ul { margin: .5rem 0 0 1.25rem; }
+    body.page-fast .pick-card li { margin: .15rem 0; }
+
+    /* Desktop */
+    @media (min-width: 900px){
+      body.page-fast .pick-card{ grid-template-columns: 560px 1fr; padding: 1.5rem; gap: 1.5rem; }
+      body.page-fast .img-box{ height: 480px; }
+      body.page-fast h2 { font-size: 1.9rem; }
+      body.page-fast .macro { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body class="page-fast">
+  <main class="wrap">
+    <!-- Mast -->
+    <header class="mast" id="top">
+      <div class="logo-ss" aria-hidden="true">SS</div>
+      <div class="purpose">
+        <h1 class="site-title">Fast Food Picks</h1>
+        <p class="tagline">When you can’t cook, order smart—high protein, lower calories, easy to customize.</p>
+      </div>
+    </header>
+
+    <!-- SAME NAV ON ALL PAGES -->
+    <nav class="nav-box" aria-label="Primary">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="subs.html">Substitutes</a></li>
+        <li><a href="fast.html" class="active">Fast Food</a></li>
+        <li><a href="basic.html">Basic Meals</a></li>
+      </ul>
+    </nav>
+
+    <hr class="rule" />
+
+    <section class="home-section">
+      <h2>At a Glance</h2>
+      <p class="picks-intro">Macros are approximate and vary by location/toppings. Use each chain’s nutrition calculator if you add sauces or sides.</p>
+      <table class="compact" aria-label="Summary">
+        <thead><tr><th>Chain</th><th>Order</th><th>Calories</th><th>Protein</th></tr></thead>
+        <tbody>
+          <tr><td>Chick-fil-A</td><td>12-ct Grilled Nuggets (no sauce)</td><td>~200</td><td>~38 g</td></tr>
+          <tr><td>Chipotle</td><td>Double Chicken Bowl + fajita veg + tomatillo green salsa + romaine (no rice/beans)</td><td>~400</td><td>~64 g</td></tr>
+          <tr><td>Panda Express</td><td>Grilled Teriyaki Chicken + Super Greens</td><td>~430</td><td>~45 g</td></tr>
+          <tr><td>KFC</td><td>Grilled Chicken Breast + Green Beans</td><td>~235</td><td>~39 g</td></tr>
+          <tr><td>Subway</td><td>Rotisserie Chicken Protein Bowl (skip cheese/dressing)</td><td>~220–320</td><td>~31–38 g</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- Chick-fil-A -->
+    <section class="home-section">
+      <p class="kicker">Chick-fil-A</p>
+      <h2>12-Count Grilled Nuggets</h2>
+      <div class="pick-card">
+        <div class="gallery">
+          <div class="img-box">
+            <img src="Fast-Chickfila.png" alt="Chick-fil-A grilled nuggets in a box" loading="lazy" />
+          </div>
+        </div>
+        <div>
+          <p class="macro">~200 cal • ~38 g protein • ~2 g carbs • ~4.5 g fat</p>
+          <ul>
+            <li>Order <strong>12-count Grilled Nuggets</strong>.</li>
+            <li>Skip sauces or use a zero/very-low-calorie option.</li>
+            <li>Add a fruit cup if you need carbs.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- Chipotle -->
+    <section class="home-section">
+      <p class="kicker">Chipotle</p>
+      <h2>Double Chicken Bowl (no rice/beans)</h2>
+      <div class="pick-card">
+        <div class="gallery">
+          <div class="img-box">
+            <img src="Fast-Chipotle.jpg" alt="Chipotle bowl with double chicken, fajita veggies and salsa" loading="lazy" />
+          </div>
+        </div>
+        <div>
+          <p class="macro">~400 cal • ~64 g protein • ~5–10 g carbs • ~10–12 g fat</p>
+          <ul>
+            <li>Bowl + <strong>Double Chicken</strong>.</li>
+            <li>Add <strong>Fajita Veggies</strong>, <strong>Tomatillo Green-Chili Salsa</strong>, <strong>Romaine</strong>.</li>
+            <li>Skip rice/beans/cheese/sour cream/guac to keep calories low.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- Panda Express -->
+    <section class="home-section">
+      <p class="kicker">Panda Express</p>
+      <h2>Grilled Teriyaki Chicken + Super Greens</h2>
+      <div class="pick-card">
+        <div class="gallery">
+          <div class="img-box">
+            <img src="Fast-Panda.jpg" alt="Panda Express grilled teriyaki chicken with super greens" loading="lazy" />
+          </div>
+        </div>
+        <div>
+          <p class="macro">~430 cal • ~45 g protein • ~14–22 g carbs • ~13 g fat</p>
+          <ul>
+            <li>Bowl with <strong>Super Greens</strong> side.</li>
+            <li><strong>Grilled Teriyaki Chicken</strong>; sauce on the side, use lightly.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- KFC -->
+    <section class="home-section">
+      <p class="kicker">KFC</p>
+      <h2>Grilled Chicken Breast + Green Beans</h2>
+      <div class="pick-card">
+        <div class="gallery">
+          <div class="img-box">
+            <img src="Fast-KFC.jpg" alt="KFC grilled chicken breast with a side of green beans" loading="lazy" />
+          </div>
+        </div>
+        <div>
+          <p class="macro">~235 cal • ~39 g protein • ~5 g carbs • ~7 g fat</p>
+          <ul>
+            <li><strong>Kentucky Grilled Chicken Breast</strong> (not fried) + <strong>Green Beans</strong>.</li>
+            <li>Skip biscuits and creamy sides.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- Subway -->
+    <section class="home-section">
+      <p class="kicker">Subway</p>
+      <h2>Rotisserie-Style Chicken Protein Bowl</h2>
+      <div class="pick-card">
+        <div class="gallery">
+          <div class="img-box">
+            <img src="Fast-Subway.jpg" alt="Subway rotisserie chicken protein bowl with greens and veggies" loading="lazy" />
+          </div>
+        </div>
+        <div>
+          <p class="macro">~220–320 cal • ~31–38 g protein • ~7–12 g carbs • ~8–16 g fat</p>
+          <ul>
+            <li>Choose the <strong>Rotisserie-Style Chicken Protein Bowl</strong>.</li>
+            <li>Load veggies; skip cheese and dressing (or choose light vinaigrette).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <footer class="footer-box">
+      <p class="notice">Nutrition values are estimates; check chain calculators for the latest numbers.</p>
+      <p class="copy">© 2025 Savory Slims Recipes</p>
+    </footer>
+  </main>
+</body>
+</html>
