@@ -4,30 +4,74 @@
   <meta charset="utf-8" />
   <title>Savory Slims Recipes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Savory Slims: tasty, high-protein recipes, healthy substitutes, and fast-food picks for busy days." />
+  <meta name="author" content="Khoi Tran" />
   <link rel="stylesheet" href="savory.css" />
+  <style>
+    /* Home-only image tweaks (scoped) */
+    body.page-home #fastfood .gallery img { object-fit: contain; max-height: 180px; }
+    body.page-home .gallery { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
+    body.page-home .gallery img { width:100%; max-width:600px; height:auto; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,.2); }
+
+    /* Video styling */
+    .promo-video { text-align: center; margin: 2rem 0; }
+    .promo-video video { max-width: 100%; border-radius: 10px; }
+    .promo-video p { font-style: italic; margin-top: 0.5rem; color: var(--muted); }
+    
+    /* Form styling */
+    form.contact-form {
+      background: #fff;
+      color: #111;
+      padding: 1rem;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+    form.contact-form label { display: block; margin: 0.5rem 0 0.25rem; font-weight: 600; }
+    form.contact-form input, 
+    form.contact-form select, 
+    form.contact-form textarea {
+      width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 6px;
+    }
+    form.contact-form button {
+      margin-top: 1rem; padding: 0.6rem 1.2rem;
+      background: var(--cyan); border: none; border-radius: 6px;
+      font-weight: 600; cursor: pointer;
+    }
+    form.contact-form button:hover { background: var(--lime); }
+  </style>
 </head>
-<body>
+<body class="page-home">
   <main class="wrap">
-    <!-- Mast: Logo + Purpose statement -->
+    <!-- Mast -->
     <header class="mast" id="top">
       <div class="logo-ss" aria-hidden="true">SS</div>
       <div class="purpose">
         <h1 class="site-title">Savory Slims Recipes</h1>
         <p class="tagline">
           Eat smart, keep flavor. Savory Slims turns comfort food into <strong>lean, anabolic</strong> meals with
-          simple prep, smart swaps, and weekly-friendly meal plans—so you can hit your goals <em>and</em> love every bite.
+          simple prep, smart swaps, and on-the-go options—so you can hit your goals <em>and</em> love every bite.
         </p>
       </div>
     </header>
 
-    <!-- Primary Nav (trimmed: no Ingredient Swaps, no Contact) -->
+    <!-- SAME NAV ON ALL PAGES -->
     <nav class="nav-box" aria-label="Primary">
       <ul class="nav">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="basic.html">Basic</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="subs.html">Substitutes</a></li>
+        <li><a href="fast.html">Fast Food</a></li>
+        <li><a href="basic.html">Basic Meals</a></li>
       </ul>
     </nav>
+
+    <hr class="rule" />
+
+    <!-- Video -->
+    <section class="promo-video">
+      <video src="video.mp4" controls autoplay muted loop></video>
+      <p>“Eat healthy and live happy.”</p>
+    </section>
 
     <hr class="rule" />
 
@@ -52,8 +96,7 @@
     <section id="subs" class="home-section">
       <h2>Healthy Substitutes</h2>
       <p class="section-desc">
-        Discover smart ingredient swaps that turn calorie-dense favorites into lighter alternatives without losing flavor. 
-        Perfect for keeping comfort food in your routine.
+        Discover smart ingredient swaps that turn calorie-dense favorites into lighter alternatives without losing flavor.
       </p>
       <div class="gallery">
         <img src="Substitutes.jpg" alt="Healthy substitutes overview" />
@@ -64,23 +107,56 @@
 
     <hr class="rule" />
 
-    <!-- MEAL PLANS (visual section only; separate page coming later) -->
-    <section id="plans" class="home-section">
-      <h2>Meal Plans</h2>
+    <!-- FAST FOOD HEALTHY OPTIONS -->
+    <section id="fastfood" class="home-section">
+      <h2>Fast Food Healthy Options</h2>
       <p class="section-desc">
-        Structured plans that take the guesswork out of eating healthy. Each plan balances macros and flavor, making it
-        easy to stay consistent week after week.
+        On the go? These picks from popular chains keep calories in check and protein high.
+        Tap through to see exact orders and macros.
       </p>
       <div class="gallery">
-        <img src="Meal Prep 1.jpg" alt="Meal prep plan 1" />
-        <img src="Meal Prep 2.jpg" alt="Meal prep plan 2" />
+        <img src="ChickLogo.jpg" alt="Chick-fil-A logo for healthy picks" />
+        <img src="ChipotleLogo.jpg" alt="Chipotle logo for healthy picks" />
+        <img src="KFCLogo.jpg" alt="KFC logo for healthy picks" />
       </div>
+      <p><a href="fast.html">Explore all fast food picks →</a></p>
     </section>
 
     <hr class="rule" />
 
-    <!-- Minimal Footer (no contact content) -->
+    <!-- Contact Form -->
+    <section class="home-section">
+      <h2>Request a Recipe</h2>
+      <p class="section-desc">Have an idea for a healthy swap or a quick high-protein meal? Send your request below!</p>
+      <form class="contact-form" action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="type">Recipe Type</label>
+        <select id="type" name="type">
+          <option value="basic">Basic Meal</option>
+          <option value="substitute">Healthy Substitute</option>
+          <option value="fast">Fast Food Option</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <hr class="rule" />
+
     <footer class="footer-box">
+      <p>
+        Learn more about healthy eating at 
+        <a href="https://www.nutrition.gov" target="_blank">Nutrition.gov</a>
+      </p>
+      <p>Contact: <a href="mailto:ktran50@asu.edu">ktran50@asu.edu</a></p>
       <p class="copy">© 2025 Savory Slims Recipes</p>
     </footer>
   </main>
