@@ -4,207 +4,148 @@
   <meta charset="utf-8" />
   <title>Healthy Substitutes — Savory Slims Recipes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Healthy twists on tacos, pizza, and burgers with high protein and fewer calories. Side-by-side tables compare our versions to popular chain items." />
-  <meta name="keywords" content="healthy substitutes, tacos, pizza, burgers, high protein, low calorie, macro friendly" />
+  <meta name="description" content="Healthier tacos, pizza, and burgers with clear instructions and nutrition comparisons to popular chains." />
   <meta name="author" content="Khoi Tran" />
   <link rel="stylesheet" href="savory.css" />
   <style>
-    /* Page-local styles (move to savory.css later if you want) */
-    .gallery{display:flex;justify-content:center;margin:1rem 0;}
-    .gallery img{width:100%;max-width:600px;max-height:300px;object-fit:contain;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.2);}
-    .table-wrap{overflow-x:auto;background:var(--panel,#111);border:1px solid var(--line,#333);border-radius:14px;margin-top:10px}
-    table{width:100%;border-collapse:collapse;font-size:.95rem}
-    thead th{text-align:left;padding:12px;background:var(--thead,#1a1f2b);color:var(--ink,#eaf2ff)}
-    tbody td{padding:12px;border-top:1px solid var(--line,#333);vertical-align:top}
-    tbody tr:nth-child(even){background:rgba(255,255,255,.03)}
-    .small{font-size:.9rem;opacity:.85}
-    .good{color:#3fd47a;font-weight:600}
+    /* Scope to this page only */
+    body.page-subs .gallery{display:flex;justify-content:center;flex-wrap:wrap;gap:1rem;margin:1rem 0;}
+    body.page-subs .gallery img{width:100%;max-width:600px;max-height:300px;object-fit:contain;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.2);}
+    body.page-subs .table-wrap{overflow-x:auto;background:#111;border:1px solid #333;border-radius:14px;margin-top:10px}
+    body.page-subs table{width:100%;border-collapse:collapse;font-size:.95rem}
+    body.page-subs thead th{text-align:left;padding:12px;background:#1a1f2b;color:#eaf2ff}
+    body.page-subs tbody td{padding:12px;border-top:1px solid #333;vertical-align:top;color:#eaeaea}
+    body.page-subs tbody tr:nth-child(even){background:rgba(255,255,255,.03)}
+    body.page-subs .small{font-size:.9rem;opacity:.85}
+    body.page-subs .good{color:#3fd47a;font-weight:600}
   </style>
 </head>
-<body>
+<body class="page-subs">
   <main class="wrap">
     <!-- Mast -->
     <header class="mast" id="top">
       <div class="logo-ss" aria-hidden="true">SS</div>
       <div class="purpose">
         <h1 class="site-title">Healthy Substitutes</h1>
-        <p class="tagline">
-          Classic comfort foods reworked with leaner ingredients and smarter portions — more protein, fewer calories.
-        </p>
+        <p class="tagline">Comfort classics reworked with leaner ingredients and smarter portions.</p>
       </div>
     </header>
 
-    <!-- Nav (trimmed) -->
+    <!-- SAME NAV ON ALL PAGES -->
     <nav class="nav-box" aria-label="Primary">
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="basic.html">Basic</a></li>
-        <li><a class="active" href="subs.html">Substitutes</a></li>
+        <li><a href="subs.html">Substitutes</a></li>
+        <li><a href="fast.html">Fast Food</a></li>
+        <li><a href="basic.html">Basic Meals</a></li>
       </ul>
     </nav>
 
     <hr class="rule" />
 
-    <!-- ===== 1) Carne Asada Tacos (leaned-up) ===== -->
+    <!-- Tacos -->
     <section class="home-section">
       <h2>Carne Asada Tacos (Lean)</h2>
-      <div class="gallery">
-        <img src="TacosSub.jpg" alt="Carne asada tacos with onion, cilantro, lime" />
-      </div>
-
+      <div class="gallery"><img src="TacosSub.jpg" alt="Carne asada tacos with onion, cilantro, lime" /></div>
       <article class="recipe">
-        <h3>Ingredients (3 tacos, 1 serving)</h3>
+        <h3>Ingredients (3 tacos)</h3>
         <ul>
-          <li>Lean top sirloin, trimmed, <strong>200 g cooked</strong> (lime, garlic, salt, pepper)</li>
+          <li>Lean top sirloin, trimmed, <strong>200 g cooked</strong></li>
           <li>Corn tortillas, <strong>3 small</strong></li>
-          <li>White onion, <strong>1/4 cup</strong>, finely diced</li>
-          <li>Cilantro, <strong>1/4 cup</strong>, chopped</li>
+          <li>White onion, <strong>1/4 cup</strong>, cilantro <strong>1/4 cup</strong>, lime wedges</li>
           <li>Guacamole, <strong>1 Tbsp</strong></li>
-          <li>Fresh lime wedges</li>
         </ul>
-
         <h3>Instructions</h3>
         <ol>
-          <li><strong>Sear steak:</strong> Very hot cast-iron or grill pan. Sear 3–4 min per side to ~135°F (57°C). Rest 5 min, slice thin across the grain.</li>
-          <li><strong>Warm tortillas:</strong> Dry-skillet or open flame 20–30 sec/side until pliable.</li>
-          <li><strong>Assemble:</strong> Divide steak across tortillas. Top with onion, cilantro, <em>1 Tbsp</em> guac total, and lime juice.</li>
+          <li>Sear steak 3–4 min/side to ~135°F; rest 5 min; slice thin.</li>
+          <li>Warm tortillas 20–30 sec/side.</li>
+          <li>Assemble; use 1 Tbsp guac total; finish with lime.</li>
         </ol>
+        <p><strong>Macros:</strong> ~560 kcal • 60 g protein • 45 g carbs • 18 g fat</p>
 
-        <h3>Macros (approx.)</h3>
-        <p>~<strong>560 kcal</strong> • <strong>60 g</strong> protein • <strong>45 g</strong> carbs • <strong>18 g</strong> fat</p>
-
-        <!-- Table: Tacos comparison -->
-        <h3>Nutrition Comparison — Tacos <span class="small">(3 tacos)</span></h3>
+        <h3>Nutrition Comparison — Tacos (3)</h3>
         <div class="table-wrap">
           <table>
-            <thead>
-              <tr><th>Version</th><th>Calories</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr>
-            </thead>
+            <thead><tr><th>Version</th><th>Calories</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr></thead>
             <tbody>
-              <tr><td>Our Lean Carne Asada Tacos</td><td>~560</td><td>60 g</td><td>45 g</td><td>18 g</td></tr>
+              <tr><td>Our Lean Carne Asada</td><td>~560</td><td>60 g</td><td>45 g</td><td>18 g</td></tr>
               <tr><td>Chain Example (On The Border, Crispy Beef ×3)</td><td>740</td><td>38 g</td><td>47 g</td><td>42 g</td></tr>
               <tr><td><strong>Difference (Our − Chain)</strong></td><td class="good"><strong>−180</strong></td><td class="good"><strong>+22 g</strong></td><td class="good"><strong>−2 g</strong></td><td class="good"><strong>−24 g</strong></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="small">Chain values from On The Border nutrition listing (crispy tacos, set of 3). Numbers vary by location.</p>
       </article>
     </section>
 
     <hr class="rule" />
 
-    <!-- ===== 2) Healthy Pepperoni Pizza ===== -->
+    <!-- Pizza -->
     <section class="home-section">
       <h2>Healthy Pepperoni Pizza (Personal)</h2>
-      <div class="gallery">
-        <img src="PizzaSub.jpg" alt="Healthy pepperoni pizza with low-fat mozzarella" />
-      </div>
-
+      <div class="gallery"><img src="PizzaSub.jpg" alt="Healthy pepperoni pizza with low-fat mozzarella" /></div>
       <article class="recipe">
-        <h3>Ingredients (1 personal pizza)</h3>
+        <h3>Ingredients</h3>
         <ul>
-          <li>Very thin flatbread/pita crust, <strong>1</strong> (≈150–200 kcal)</li>
-          <li>Low-fat mozzarella, shredded, <strong>75–85 g</strong></li>
-          <li>Turkey pepperoni, <strong>40 g</strong> (≈15 slices)</li>
-          <li>Tomato sauce (no added sugar), <strong>1/4 cup</strong></li>
-          <li>Dried oregano &amp; garlic powder</li>
+          <li>Very thin flatbread/pita, <strong>1</strong></li>
+          <li>Low-fat mozzarella, <strong>75–85 g</strong></li>
+          <li>Turkey pepperoni, <strong>40 g</strong></li>
+          <li>Tomato sauce, <strong>1/4 cup</strong>, oregano & garlic powder</li>
         </ul>
-
         <h3>Instructions</h3>
-        <ol>
-          <li>Preheat oven to 425°F (220°C).</li>
-          <li>Spread sauce, add cheese &amp; pepperoni; season.</li>
-          <li>Bake 8–10 min until cheese bubbles and edges are crisp.</li>
-          <li>Cool 2 min; slice into 4 wedges.</li>
-        </ol>
+        <ol><li>Bake at 425°F for 8–10 min until cheese bubbles and edges are crisp.</li></ol>
+        <p><strong>Macros:</strong> ~710 kcal • 60 g protein • 50 g carbs • 26 g fat</p>
 
-        <h3>Macros (approx.)</h3>
-        <p>~<strong>710 kcal</strong> • <strong>60 g</strong> protein • <strong>50 g</strong> carbs • <strong>26 g</strong> fat</p>
-
-        <!-- Table: Pizza comparison -->
-        <h3>Nutrition Comparison — Pizza <span class="small">(3 slices vs. 1 personal)</span></h3>
+        <h3>Nutrition Comparison — Pizza</h3>
         <div class="table-wrap">
           <table>
-            <thead>
-              <tr><th>Version</th><th>Calories</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr>
-            </thead>
+            <thead><tr><th>Version</th><th>Calories</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr></thead>
             <tbody>
-              <tr><td>Our Healthy Pepperoni Pizza</td><td>~710</td><td>60 g</td><td>50 g</td><td>26 g</td></tr>
-              <tr><td>Chain Example (Pizza Hut, Large Stuffed Crust Pepperoni — 3 slices)</td><td>~1020</td><td>~45 g</td><td>~105 g</td><td>~45 g</td></tr>
-              <tr><td><strong>Difference (Our − Chain)</strong></td><td class="good"><strong>−310</strong></td><td class="good"><strong>+15 g</strong></td><td class="good"><strong>−55 g</strong></td><td class="good"><strong>−19 g</strong></td></tr>
+              <tr><td>Our Healthy Pepperoni</td><td>~710</td><td>60 g</td><td>50 g</td><td>26 g</td></tr>
+              <tr><td>Pizza Hut, Large Stuffed Crust (3 slices)</td><td>~1020</td><td>~45 g</td><td>~105 g</td><td>~45 g</td></tr>
+              <tr><td><strong>Difference</strong></td><td class="good"><strong>−310</strong></td><td class="good"><strong>+15 g</strong></td><td class="good"><strong>−55 g</strong></td><td class="good"><strong>−19 g</strong></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="small">Per-slice ≈340 kcal, ~15 g protein, ~35 g carbs, ~15 g fat ×3 slices ≈ values shown.</p>
       </article>
     </section>
 
     <hr class="rule" />
 
-    <!-- ===== 3) In-N-Out Style Burger (Healthy) ===== -->
+    <!-- Burger -->
     <section class="home-section">
       <h2>In-N-Out Style Burger (Healthy)</h2>
-      <div class="gallery">
-        <img src="BurgerSub.jpg" alt="Healthy In-N-Out style burger with spread, onions, lettuce, tomato, peppers" />
-      </div>
-
+      <div class="gallery"><img src="BurgerSub.jpg" alt="Healthy In-N-Out style burger with spread, onions, lettuce, tomato, peppers" /></div>
       <article class="recipe">
-        <h3>Ingredients (1 burger)</h3>
+        <h3>Ingredients</h3>
         <ul>
-          <li>93% lean ground beef, raw, <strong>170 g</strong> (form 3/4&quot; patty)</li>
-          <li>Light whole-wheat bun, <strong>1</strong> (≈120–140 kcal)</li>
-          <li>Lettuce leaf, <strong>1</strong>; tomato, <strong>2 slices</strong></li>
-          <li>Yellow peppers, grilled, <strong>2 strips</strong></li>
-          <li>Onion, sliced, <strong>1/4 cup</strong>, caramelized (light spray)</li>
-          <li><em>Healthy Spread:</em> nonfat Greek yogurt <strong>2 Tbsp</strong> + light mayo <strong>1 tsp</strong> + ketchup <strong>1 tsp</strong> + relish <strong>1 tsp</strong></li>
-          <li>Salt &amp; pepper</li>
+          <li>93% lean ground beef, <strong>170 g</strong>; light whole-wheat bun, <strong>1</strong></li>
+          <li>Lettuce, tomato, caramelized onions (spray), yellow peppers</li>
+          <li>Yogurt 2 Tbsp + light mayo 1 tsp + ketchup 1 tsp + relish 1 tsp</li>
         </ul>
-
         <h3>Instructions</h3>
         <ol>
-          <li><strong>Onions:</strong> Medium heat, tiny spray + pinch salt, 10–12 min to golden.</li>
-          <li><strong>Patty:</strong> Med-high, 3–4 min/side to 160°F internal.</li>
-          <li><strong>Bun:</strong> Toast 1–2 min cut-side down.</li>
-          <li><strong>Assemble:</strong> Spread half the sauce → lettuce → tomato → patty → onions &amp; peppers → remaining sauce.</li>
+          <li>Caramelize onions 10–12 min over medium heat.</li>
+          <li>Cook patty 3–4 min/side to 160°F; toast bun 1–2 min.</li>
+          <li>Assemble with veggies and spread.</li>
         </ol>
+        <p><strong>Macros:</strong> ~705 kcal • 58 g protein • 45 g carbs • 28 g fat</p>
 
-        <h3>Macros (approx.)</h3>
-        <p>~<strong>705 kcal</strong> • <strong>58 g</strong> protein • <strong>45 g</strong> carbs • <strong>28 g</strong> fat</p>
-
-        <!-- Table: Burger comparison -->
         <h3>Nutrition Comparison — Burger</h3>
         <div class="table-wrap">
           <table>
-            <thead>
-              <tr><th>Version</th><th>Calories</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr>
-            </thead>
+            <thead><tr><th>Version</th><th>Calories</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr></thead>
             <tbody>
-              <tr><td>Our In-N-Out Style Burger (Healthy)</td><td>~705</td><td>58 g</td><td>45 g</td><td>28 g</td></tr>
-              <tr><td>Chain Example (Five Guys Bacon Cheeseburger)</td><td>~1060</td><td>~51 g</td><td>~40 g</td><td>~62 g</td></tr>
-              <tr><td><strong>Difference (Our − Chain)</strong></td><td class="good"><strong>−355</strong></td><td class="good"><strong>+7 g</strong></td><td>+5 g</td><td class="good"><strong>−34 g</strong></td></tr>
+              <tr><td>Our In-N-Out Style (Healthy)</td><td>~705</td><td>58 g</td><td>45 g</td><td>28 g</td></tr>
+              <tr><td>Five Guys Bacon Cheeseburger</td><td>~1060</td><td>~51 g</td><td>~40 g</td><td>~62 g</td></tr>
+              <tr><td><strong>Difference</strong></td><td class="good"><strong>−355</strong></td><td class="good"><strong>+7 g</strong></td><td>+5 g</td><td class="good"><strong>−34 g</strong></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="small">Restaurant values vary by location and build; numbers shown are typical listings.</p>
       </article>
     </section>
 
     <hr class="rule" />
 
-    <!-- Notes & sources (kept for external links requirement later) -->
-    <section class="home-section">
-      <h3>Notes &amp; Sources</h3>
-      <ul class="small">
-        <li>On The Border — Nutrition &amp; Allergen PDF.</li>
-        <li>Pizza Hut — Nutrition Portal (Stuffed Crust Pepperoni per-slice values).</li>
-        <li>Five Guys — Bacon Cheeseburger nutrition ranges from major databases.</li>
-      </ul>
-      <p class="small">Our macros are approximations from the ingredient amounts above.</p>
-    </section>
-
-    <hr class="rule" />
-
-    <!-- Minimal Footer -->
     <footer class="footer-box">
       <p class="copy">© 2025 Savory Slims Recipes</p>
     </footer>
